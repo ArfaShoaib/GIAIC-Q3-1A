@@ -9,11 +9,7 @@ def email_validation(email):
     if re.match(r"[^@]+@[^@]+\.[^@]+", email):
         return True
         
-    
-
-
-
-#Phone number validation function
+    #Phone number validation function
 def phone_validation(phone):
     pattern = r'^\+?1?\d{9,15}$'
     return re.match(pattern, phone) is not None
